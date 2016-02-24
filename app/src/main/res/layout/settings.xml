@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_et"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="text|textCapWords|textAutoComplete|textAutoCorrect"
+            android:maxLines="1"
+            android:hint="City"
+            android:singleLine="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dedede"
+            android:layout_below="@+id/city_et"
+            android:layout_marginTop="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metric unit format"
+            android:id="@+id/switch_units"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/city_et"
+            android:layout_alignStart="@+id/city_et"
+            android:layout_alignEnd="@+id/city_et"
+            android:checked="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save_button"
+            android:layout_below="@+id/switch_units"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp" />
+    </RelativeLayout>
+</LinearLayout>
